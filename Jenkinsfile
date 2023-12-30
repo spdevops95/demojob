@@ -22,7 +22,9 @@ pipeline {
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                 // Your test commands go here
+                sh 'echo "Running tests..."'
+                sh 'mvn test'  // Replace with your actual test command
             }
         }
 
